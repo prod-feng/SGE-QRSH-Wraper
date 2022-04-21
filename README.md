@@ -1,7 +1,7 @@
 # SGE-QRSH-Wraper
 
 For SGE (sun Grid Engine) users, when your use qlogin and qrsh to run interactive jobs, 
-the process you get on the work node has not set the SGE runtime environment, also like 
+the process you get on the work node has not set the SGE runtime environment(like SGE_*,JOB_ID,etc), also like 
 CUDA_VISIBLE_DEVICE, DISPLAY env variables.
 
 To get these env variables to be set as a batch job does, you can use the qrsh, following a shell command.
