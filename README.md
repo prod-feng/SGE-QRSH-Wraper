@@ -16,7 +16,7 @@ If your sconf set rsh_daemon and rsh_command to use ssh, then you can set rsh_co
 rsh_command                  /usr/bin/ssh -t
 ````
 
-then, qrsh -V -pty y -q gpu.q $SHELL should still work as the above.
+then, "qrsh -V  -q gpu.q $SHELL" should still work as the above(the -pty y does not affect here since it is set to use ssh).
 
 You can write a script to wrap the qrsh command above.
 
