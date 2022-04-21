@@ -20,5 +20,7 @@ then, "qrsh -V  -q gpu.q $SHELL" should still work as the above(the -pty y does 
 
 You can write a script to wrap the qrsh command above.
 
-
-
+With the qrsh_wraper.sh file here, you can run:
+````text
+./qrsh_wraper.sh -q gpu.q
+````
