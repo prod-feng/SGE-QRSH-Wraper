@@ -11,7 +11,7 @@ Then you can use
 qrsh -V -pty y -q gpu.q $SHELL
 ````
 
-If your sconf set rsh_daemon and rsh_command to use ssh, then you can set rsh_command to be:
+If your sconf set rsh_daemon and rsh_command to use ssh, then you can set rsh_command with "-t" option, to be:
 ````text
 rsh_command                  /usr/bin/ssh -t
 ````
